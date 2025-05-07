@@ -1,0 +1,157 @@
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #F0F7FF;
+  color: #333;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh
+}
+
+.container {
+  width: 100%;
+  max-width: 900px; /* Adjust this for desired content width */
+  padding: 20px;
+  text-align: left; /* Keeps text left-aligned within the container */
+  margin: 0 auto
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 40px;
+  border-bottom: 2px wavy #333;
+  padding-bottom: 5px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+p {
+  line-height: 1.6; /* Makes text more readable */
+  margin-bottom: 1em; /* Adds space between paragraphs */
+}
+
+p, ul, ol {
+  text-align: justify; /* Allows text to flow more like natural writing */
+}
+
+ul {
+  padding-left: 20px;
+}
+
+a {
+  color: #d95f02;
+  text-decoration: underline wavy;
+}
+
+a:hover {
+  color: #1b9e77;
+}
+
+.scribble-divider {
+  border: none;
+  border-bottom: 3px wavy #333;
+  margin: 20px 0;
+}
+
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px; /* You can adjust this height */
+  margin: auto;
+}
+
+canvas {
+  width: 100% !important;
+  max-width: 600px;
+  height: auto !important;
+}
+
+.diagram-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  max-height: 700px; /* You can adjust this height */
+  margin: auto;
+}
+
+.handwritten-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Patrick Hand', cursive;  /* Handwriting font */
+  text-decoration: underline wavy;       /* Wavy underline like a scribble */
+  text-decoration-color: #333;           /* Dark underline */
+}
+
+.handwritten-tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Patrick Hand', cursive;  /* Keep the handwriting style */
+  
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* show above */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.handwritten-tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+figure {
+  margin: 20px auto;  /* Space above and below the image */
+  height: auto;
+  float: left;
+  max-width: 100%;
+  margin-right: 20px  /* Center the caption under the image */
+}
+
+figcaption {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 0.5em;
+  color: #333;
+  margin-top: 10px;  /* Space between the image and the caption */
+}
+
+img.figure {
+  width: 300px;
+  max-width: 100%;  /* Make the image responsive, it won't exceed the container's width */
+  height: auto;  /* Maintain aspect ratio */
+  display: block;  /* Ensure that the image behaves as a block-level element */
+  margin: 0 auto;  /* Center the image horizontally */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 5px;   /* Adjust top margin to reduce space above headers */
+  margin-bottom: 5px; /* Adjust bottom margin to reduce space below headers */
+  padding: 0;         /* Remove padding to make sure there is no extra space */
+}
+
+.container, .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px; /* Rounded corners for a gentle notebook feel */
+  background-color: #fff8f0;
+}

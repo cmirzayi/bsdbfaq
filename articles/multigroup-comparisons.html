@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Compact Letter Display</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+  <h1>Multigroup Comparisons and Compact Letter Display</h1>
+  <p>Frequently when curating microbiome research, you will come across figures that show comparisons between several groups. They often look like this:</p>
+  <figure><img src="../images/cld.png" class="figure">
+  <figcaption>https://www.biorxiv.org/content/biorxiv/early/2023/10/06/2023.10.05.561135.full.pdf</figcaption></figure>
+  <p>See those "a"s and "b"s above the box and whisker plots? Those are a way to distinguish statistically significantly different groups when comparing three or more groups. In this article, we're going to look at compact letter display, but first let's take a look at how multigroup comparisons work.</p>
+
+  <h2>Multigroup comparisons</h2>
+  <p>In statistics, we often compare two groups. This could be people with a disease or condition and those without it. For instance, many studies compare people who smoke to those who don't.</p>
+  <p>But sometimes we want to compare more than two groups. To continue with our example of smoking, we may want to compare current smokers, former smokers, and people who have never smoked.</p>
+  <h3>One-vs-All (One-vs-Rest)</h3>
+  <p>In this methodology, we rotate through each group, comparing it to a <span class="handwritten-tooltip">reference group<span class="tooltiptext">The group we are comparing our group of interest against.</span></span> made up of all other groups. For our example of smoking, this would involve comparing current smokers to former and never smokers then former smokers to current and never smokers and finally never smokers to current and former smokers. This method is used to identify hallmarks of that group in particular compared to the other groups.</p>
+  <h3>Pairwise (One-vs-One)</h3>
+  <p>In contrast to one-vs-all, this method compares each group in pairs. No groups are combined. This method allows us to see how each group compares to each other group. The pairwise comparisons for our example are:</p>
+  <ul>
+    <li>Current vs. never smokers</li>
+    <li>Current vs. former smokers</li>
+    <li>Former vs. never smokers</li>
+  </ul>
+
+  <h2>Compact Letter Display</h2>
+  
+ 
+  <div id="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../script.js"></script> <!-- External script.js file -->
+  
+ 
+
+</div>
+ 
+
+
+</body>
+</html>
