@@ -155,3 +155,42 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px; /* Rounded corners for a gentle notebook feel */
   background-color: #fff8f0;
 }
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  position: fixed;
+  right: 0;
+  top: 20px;
+  box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.site-header {
+  background-color: #fdf6e3;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.site-header nav {
+  margin-top: 5px;
+}
+
+.site-header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
